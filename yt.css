@@ -10,6 +10,8 @@
   /* Size */
   --size-padding: 12px;
   --avatar-size: 36px;
+  --up-size: 600px;
+  --next-size: 400px;
 
   /* Font Size */
   --font-large: 18px;
@@ -73,7 +75,7 @@ button:focus {
   max-width: 1000px;
 }
 
-.info {
+bodt > .info {
   padding: var(--size-padding);
 }
 
@@ -167,4 +169,62 @@ button:focus {
   text-transform: uppercase;
   color: var(--red-color);
   font-size: var(--font-medium);
+}
+
+.Upnext {
+  padding: 0px;
+  padding-left: 8px;
+}
+.Upnext .Upnext-title {
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+}
+
+.Upnext .item {
+  display: flex;
+  margin-top: var(--size-padding);
+}
+
+.Upnext .item .item-img {
+  flex: 1 1 35%;
+  margin-right: var(--size-padding);
+}
+
+.Upnext .item .item-img img {
+  width: 100%;
+}
+
+.Upnext .item .info {
+  flex: 1 1 60%;
+}
+
+.Upnext .item .moreBtn {
+  flex: 1 1 5%;
+}
+
+.Upnext .item .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.Upnext .item .info .itme-title {
+  font-size: var(--font-small);
+}
+
+.Upnext .item .info .item-name,
+.Upnext .item .info .views {
+  font-size: var(--font-micro);
+  color: var(--grey-dark-color);
+}
+
+.infoAndUpnext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .infoAndUpnext {
+    flex-direction: row;
+    margin: var(--size-padding);
+  }
 }
