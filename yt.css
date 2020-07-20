@@ -36,6 +36,8 @@ button:focus {
   cursor: pointer;
   /* 적용 안됌 확인 필요 */
   outline: none;
+  /* 위의 outline 속성이 적용이 안된다면 밑의 방법 사용 */
+  background-color: rgba(0, 0, 255, 0) !important;
 }
 
 .banner {
@@ -149,6 +151,8 @@ bodt > .info {
   width: var(--avatar-size);
   height: var(--avatar-size);
   border-radius: 50%;
+  margin-right: var(--size-padding);
+  margin-left: var(--size-padding);
 }
 
 .channel .channel-info .info {
@@ -200,6 +204,7 @@ bodt > .info {
 
 .Upnext .item .moreBtn {
   flex: 1 1 5%;
+  height: 100%;
 }
 
 .Upnext .item .info {
